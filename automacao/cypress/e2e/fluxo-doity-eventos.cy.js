@@ -8,7 +8,7 @@ describe("Suíte E2E — Plataforma de Eventos", () => {
 
     cy.get(':nth-child(1) > .group > .flex > .mt-auto').contains("Maceió").should("be.visible");
     cy.wait(1000);
-    cy.screenshot("tc005-doity-busca-eventos");
+    cy.screenshot("tc006-doity-busca-eventos");
   });
 
   it("TC-007: Validar comportamento da busca com termo inexistente / caracteres especiais", () => {
@@ -20,7 +20,7 @@ describe("Suíte E2E — Plataforma de Eventos", () => {
 
     cy.get(':nth-child(1) > .group > .flex > .mt-auto').should("be.visible");
     cy.wait(1000); 
-    cy.screenshot("tc006-doity-busca-vazia");
+    cy.screenshot("tc007-doity-busca-vazia");
   });
 
   it("TC-008: Deve validar carregamento responsivo da vitrine pública da Doity em Mobile", () => {
@@ -54,7 +54,7 @@ describe("Suíte E2E — Plataforma de Eventos", () => {
   });
 
   cy.wait(1000);
-  cy.screenshot("tc007-doity-mobile");
+  cy.screenshot("tc008-doity-mobile");
 
   });
 });
